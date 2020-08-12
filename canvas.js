@@ -135,5 +135,10 @@ canvas.addEventListener('mouseup', () => isDrawing = false);
 canvas.addEventListener('mouseout', () => isDrawing = false);
 
 
-
+const clear=document.querySelector(".clear");
+const clearfunction=function(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    console.log(this);
+}
+clear.addEventListener('click',clearfunction);
     
